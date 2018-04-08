@@ -1,5 +1,4 @@
-.jumbotron
-{
+.jumbotron {
     color: #ffffff;
     background-color: #496775;
     text-align: center;
@@ -7,8 +6,8 @@
 }
 
 /* Panel Div CSS */
-.panel
-{
+
+.panel {
     border-left-color: #598F8E;
     border-right-color: #598F8E;
     border-bottom-color: #598F8E;
@@ -16,33 +15,33 @@
 }
 
 /* Panel headers CSS */
-.panel-heading
-{
+
+.panel-heading {
     color: #FFFFFF;
     font-weight: bold;
     background-color: #598F8E;
 }
 
 /* Table headers CSS */
-thead
-{
+
+thead {
     font-weight: bold;
 }
 
 /* Add Train form CSS */
-.form-group
-{
+
+.form-group {
     padding: 15px;
 }
 
 /* Form headers CSS */
-label
-{
+
+label {
     font-weight: bold;
 }
 
 /* button CSS */
-button
-{
+
+button {
     margin-left: 10px;
 }

@@ -26,34 +26,24 @@
       <div class="panel-heading">Current Train Schedule</div>
 
       <!-- Table -->
-      <table class="table highlight">
+      <table class = "table highlight" id = "train-table">
         <thead>
           <tr>
             <th>Train Name</th>
             <th>Destination</th>
-            <th>Frequency (min)</th>
+            <th>Frequency (mins)</th>
             <th>Next Arrival</th>
             <th>Minutes Away</th>
           </tr>
         </thead>
 
         <tbody>
-            <tr>
-                <td>Alvin</td>
-                <td>Eclair</td>
-                <td>$0.87</td>
-              </tr>
-              <tr>
-                <td>Alan</td>
-                <td>Jellybean</td>
-                <td>$3.76</td>
-              </tr>
-              <tr>
-                <td>Jonathan</td>
-                <td>Lollipop</td>
-                <td>$7.00</td>
-              </tr>
-    
+          <!-- Train Information goes here -->
+          <!-- Train Information goes here -->
+          <!-- Train Information goes here -->
+          <!-- Train Information goes here -->
+          <!-- Train Information goes here -->
+          <!-- Train Information goes here -->
         </tbody>
       </table>
     </div>
@@ -67,24 +57,27 @@
           <input class="form-control" id="train-name-input" type="text">
         </div>
         <div class="form-group">
-          <label for="destination-input">Destination</label>
+          <label for="destination-input">Destination (City, State)</label>
           <input class="form-control" id="destination-input" type="text">
         </div>
         <div class="form-group">
-          <label for="train-time-input">First Train Time (DD/MM/YY - ex: 01/01/89)</label>
+          <label for="train-time-input">First Train Time (HH:mm - military time)</label>
           <input class="form-control" id="train-time-input" type="text">
         </div>
         <div class="form-group">
-          <label for="frequency-input">Frequency (min)</label>
+          <label for="frequency-input">Frequency (mins)</label>
           <input class="form-control" id="frequency-input" type="text">
         </div>
-        <button class="btn waves-effect waves-light" id="add-train-btn" type="submit">Submit <span class = "glyphicon glyphicon-send"aria-hidden = "true"></span></button>
+        <button class="btn waves-effect waves-light" id="add-train-btn" type="submit">Submit
+          <span class="glyphicon glyphicon-send" aria-hidden="true"></span>
+        </button>
       </form>
 
     </div>
   </div>
 
   <!-- /container -->
+  <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
   <script src="assets/javascript/javascript.js"></script>
