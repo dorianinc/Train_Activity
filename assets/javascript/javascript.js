@@ -18,7 +18,7 @@
       //Grab user input
       var trainName = $("#train-name-input").val().trim();
       var trainDestination = $("#destination-input").val().trim();
-      var trainTime = moment($("#train-time-input").val().trim(), "HH:mm").subtract(10, "years").format("X");
+      var trainTime = moment($("#train-time-input").val().trim(), "HH:mm").format("X");
       var trainFrequency = $("#frequency-input").val().trim();
 
       // Creates local "temporary" object for holding train data
@@ -52,17 +52,17 @@
       var trainName = childSnapShot.val().name;
       var trainDestination = childSnapShot.val().destination;
       var trainTime = childSnapShot.val().time;
+
       var trainFrequency = childSnapShot.val().frequency;
-      
-      var diffTime = moment().diff(moment.unix(trainTime), "minutes");
       var timeRemainder = moment().diff(moment.unix(trainTime), "minutes") % trainFrequency;
       var minutes = trainFrequency - timeRemainder;
       var nextTrainArrival = moment().add(minutes, "m").format("hh:mm A");
+      
       // Train Info
-      console.log(trainName);
-      console.log(trainDestination);
-      console.log(nextTrainArrival);
-      console.log(trainFrequency);
+      console.log("Train Frequency is: ", trainFrequency);
+      console.log("Time Remainder is: ", timeRemainder);
+      console.log("Next Train Arrival is : ", nextTrainArrival);
+      console.log("Minutes is: ", minutes);
 
       $("#train-table > tbody").append("<tr><td>" + trainName + "</td><td>" + trainDestination + "</td><td>" +
           trainFrequency + " mins" + "</td><td>" + nextTrainArrival + "</td><td>" + minutes + "</td></tr>");
