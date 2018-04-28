@@ -32,11 +32,6 @@
       // Uploads train data to the database
       database.ref().push(newTrain);
 
-      // Logs everything to console
-      console.log(newTrain.name);
-      console.log(newTrain.destination);
-      console.log(newTrain.time);
-      console.log(newTrain.frequency);
 
       // Clears all of the text-boxes
       $("#train-name-input").val("");
